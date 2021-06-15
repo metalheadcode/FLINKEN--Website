@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "reactstrap";
 import { AppLogo } from "../../components/Icons/Icons";
-import BigPoster from "../../img/flinken/flinken-main-page.jpg";
+import BigPoster from "../../img/flinken-main-page.jpg";
 import classes from "./HeroLayoutsTypeFifth.module.css";
 import { Fade } from "react-awesome-reveal";
 const titleText = "The New Standart In Malaysia Mortar Industry";

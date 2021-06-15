@@ -11,15 +11,18 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.(js|jsx)$/, use: "babel-loader" },
+            {
+                test: /\.(js|jsx)$/,
+                use: "babel-loader",
+            },
             {
                 test: /\.css$/,
-                loader: "css-loader",
-                options: {
-                    url: false,
-                },
+                use: ["style-loader", "css-loader"],
             },
-            { test: /\.(png|jpe?g|gif)$/i, use: "file-loader" },
+            {
+                test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/,
+                use: "url-loader",
+            },
         ],
     },
     plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })],
