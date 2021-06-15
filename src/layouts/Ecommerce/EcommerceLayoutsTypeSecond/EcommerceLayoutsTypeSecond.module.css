@@ -1,0 +1,26 @@
+.ecommerce {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-image: white;
+}
+
+.dark.ecommerce {
+    background: #1c275a;
+}
+
+@media screen and (max-width: 768px) {
+    .ecommerce {
+        background-image: none;
+        background-color: #ffffff;
+    }
+    .dark.ecommerce {
+        background: #0c1431;
+    }
+}
+@media screen and (max-width: 450px) {
+    .gridWrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
