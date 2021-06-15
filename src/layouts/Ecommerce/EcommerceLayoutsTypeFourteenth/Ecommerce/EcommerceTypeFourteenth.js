@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 //components
 import SimpleRating from "../../../../components/SimpleRating/SimpleRating";
