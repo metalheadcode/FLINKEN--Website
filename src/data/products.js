@@ -1,0 +1,95 @@
+const products = [
+    {
+        _id: 1,
+        title: "GP Base Coat",
+        description:
+            "FLINKEN® Based Coat mortar is produced according to the requirement of BS EN 998-1; incorporating standardized binder, well graded silica sand, water retention ability additve for all types of brick and block rendering.",
+        price: "40.00",
+        poster: "/src/img/flinken/flinken-product-01.png",
+        bigPoster: "/src/img/flinken/gp-based-coat.png",
+        category: "gp-series",
+        link: "/products/1",
+        features: ["Long Workable Life", "Excellent Workability", "Durable", "Define", "Perfect Air Content", "Long Shelf Life"],
+        rating: 4.5,
+    },
+    {
+        _id: 2,
+        title: "GP Thin Plaster",
+        description:
+            "FLINKEN® Thin Plaster premix mortar made from special polymer modified cementitious adhesive with well graded silica sand and calcium carbonate for thin finishing plaster. Suitable for beam, column, slab, shear wall etc",
+        price: "40.00",
+        poster: "/src/img/flinken/flinken-product-02.png",
+        bigPoster: "/src/img/flinken/gp-thin-plaster.png",
+        category: "gp-series",
+        link: "/products/2",
+        features: ["Excellent For Beam", "Excellent Workability", "Smooth Surface", "Durable", "Perfect Air Content", "Long Shelf Life"],
+        rating: 4.5,
+    },
+    {
+        _id: 3,
+        title: "GP Finishing Coat",
+        description:
+            "FLINKEN® Finishing Coat premix mortar is made from Ordinary Portland Cement(OPC) and super fine calcium carbonate with suitable methyl cellulose for excellent smooth surface and workability.",
+        price: "40.00",
+        poster: "/src/img/flinken/flinken-product-03.png",
+        bigPoster: "/src/img/flinken/gp-finishing-coat.png",
+        category: "gp-series",
+        link: "/products/3",
+        features: ["Long Workable Life", "Excellent Workability", "Durable", "Define", "Perfect Air Content", "Long Shelf Life"],
+        rating: 4.5,
+    },
+    {
+        _id: 4,
+        title: "TA C1",
+        description:
+            "FLINKEN® Tile Adhesive C1 is a premixed of high strength OPC, well graded silica sand, hydroxpropyl methyl cellulose, & modified polymer. The product is applicable for interior and exterior installation of heavy ceramic tiles.",
+        price: "40.00",
+        poster: "/src/img/flinken/flinken-product-04.png",
+        bigPoster: "/src/img/flinken/ta-c1.png",
+        category: "ta-series",
+        link: "/products/4",
+        features: ["Long Workable Life", "Excellent Workability", "Durable", "Define", "Perfect Air Content", "Long Shelf Life"],
+        rating: 4.5,
+    },
+    {
+        _id: 5,
+        title: "TA C2",
+        description:
+            "FLINKEN® Tile Adhesive C2 is a premixed of high strength OPC, well graded silica sand, hydroxpropyl methyl cellulose, & modified polymer. The product is applicable for interior and exterior installation of heavy ceramic tiles.",
+        price: "40.00",
+        poster: "/src/img/flinken/flinken-product-05.png",
+        bigPoster: "/src/img/flinken/ta-c2.png",
+        category: "ta-series",
+        link: "/products/5",
+        features: ["Long Workable Life", "Excellent Workability", "Durable", "Define", "Perfect Air Content", "Long Shelf Life"],
+        rating: 4.5,
+    },
+    {
+        _id: 6,
+        title: "TA Excel Bond",
+        description:
+            "FLINKEN® Excel Bond is polymer modified cement based adhesive for floor and wall tiling work. It is suitable for both internal and external wall applications over concrete, brickwork and rendered surfaces.",
+        price: "40.00",
+        poster: "/src/img/flinken/flinken-product-06.png",
+        bigPoster: "/src/img/flinken/ta-excel-bond.png",
+        category: "ta-series",
+        link: "/products/2",
+        features: ["Long Workable Life", "Excellent Workability", "Durable", "Define", "Perfect Air Content", "Long Shelf Life"],
+        rating: 4.5,
+    },
+    {
+        _id: 7,
+        title: "SE Non Shrink Grout",
+        description:
+            "FLINKEN® Non-Shrink Grout is hardened under stipulated test conditions, so its final volume is greater than or equal to the original installed volume. It is often used as a transfer medium between load-bearing members.",
+        price: "40.00",
+        poster: "/src/img/flinken/flinken-product-07.png",
+        bigPoster: "/src/img/flinken/se-non-shrink-grout.png",
+        category: "se-series",
+        link: "/products/3",
+        features: ["Long Workable Life", "Excellent Workability", "Durable", "Define", "Perfect Air Content", "Long Shelf Life"],
+        rating: 4.5,
+    },
+];
+
+module.exports = products;
