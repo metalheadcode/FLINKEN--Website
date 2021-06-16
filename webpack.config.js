@@ -20,8 +20,9 @@ module.exports = {
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.(eot|woff|woff2|ttf|svg|png|jpg)$/,
-                use: "url-loader",
+                test: /\.woff2$/,
+                exclude: /node_modules/,
+                use: { loader: "url-loader?limit=1024&name=fonts/[name].[ext]" },
             },
         ],
     },
