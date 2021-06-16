@@ -5,6 +5,7 @@ import TestimonialsLayoutsTypeFifth from "../layouts/TestimonialsLayouts/Testimo
 import products from "../data/products";
 import HeroLayoutsTypeFifth from "../layouts/HeroLayouts/HeroLayoutsTypeFifth";
 import PortfolioLayoutsTypeSixth from "../layouts/PortfolioLayouts/PortfolioLayoutsTypeSixth/PortfolioLayoutsTypeSixth";
+import TeamLayoutsTypeEleventh from "../layouts/TeamLayout/TeamLayoutsTypeEleventh/TeamLayoutsTypeEleventh";
 
 const HomeScreen = (props) => {
     return (
@@ -13,6 +14,7 @@ const HomeScreen = (props) => {
             <EcommerceLayoutsTypeFourteenth products={products} />
             <PortfolioLayoutsTypeSixth />
             <TestimonialsLayoutsTypeFifth />
+            <TeamLayoutsTypeEleventh />
             <FormsLayoutsTypeFirst />
         </>
     );

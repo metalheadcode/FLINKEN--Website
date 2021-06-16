@@ -26,25 +26,23 @@ function HeroLayoutsTypeFifth(props) {
                     alignItems: "center",
                 }}
             >
-                <div className={classes.gridWrapper}>
-                    <Container>
-                        <Row className={classes.contentRow}>
-                            <Col lg="8" md="8" className="mx-auto text-center">
-                                <Fade top delay={50} triggerOnce={true}>
-                                    <a href="#" className={classes.logotype}>
-                                        <AppLogo />
-                                    </a>
-                                </Fade>
-                                <Fade top delay={100} triggerOnce={true}>
-                                    <h1 className={classes.title}>{titleText}</h1>
-                                </Fade>
-                                <Fade top delay={150} triggerOnce={true}>
-                                    <p className={`normal-text ${classes.description}`}>{descriptionText}</p>
-                                </Fade>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
+                <Container>
+                    <Row className={classes.contentRow}>
+                        <Col lg="8" md="8" className="mx-auto text-center">
+                            <Fade top delay={50} triggerOnce={true}>
+                                <a href="#" className={classes.logotype}>
+                                    <AppLogo />
+                                </a>
+                            </Fade>
+                            <Fade top delay={100} triggerOnce={true}>
+                                <h1 className={classes.title}>{titleText}</h1>
+                            </Fade>
+                            <Fade top delay={150} triggerOnce={true}>
+                                <p className={`normal-text ${classes.description}`}>{descriptionText}</p>
+                            </Fade>
+                        </Col>
+                    </Row>
+                </Container>
             </section>
         </React.Fragment>
     );
