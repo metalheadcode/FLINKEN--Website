@@ -4,15 +4,10 @@ import { Row, Col, Container } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import { Button, ButtonGroup } from "react-bootstrap";
 import "../../../components/Tabs/Tabs.css";
-
-//components
 import TextButton from "../../../components/Text-Button/Text-Button"; // button jenis
 import Oval from "../../../components/Frame/Frame"; // button see more ke kanan
 import { RightArrow } from "../../../components/Icons/Icons";
-
-//components --> cardItem
 import Ecommerce from "./Ecommerce/EcommerceTypeFourteenth";
-//styles
 import classes from "./EcommerceLayoutsTypeFourteenth.module.css";
 
 const categories = ["GP Series", "TA Series", "SE Series"];
@@ -22,6 +17,8 @@ const EcommerceLayoutsTypeFourteenth = ({ dark, products }) => {
     const [activeCategory, setActiveCategory] = useState("gp-series");
     const [postDisplayNumber, setPostDisplayNumber] = useState(3);
     const [seeMoreBtn, setSeeMoreBtn] = useState(false);
+
+    const basePath = "../../../../public/image/flinken-product-01.png";
 
     const onClickCategory = (event) => {
         setActiveCategory(event.target.value);

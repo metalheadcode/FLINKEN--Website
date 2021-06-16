@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-
 import Portfolio from "./Portfolio/PortfolioTypeSixth";
-import placeholderDark from "../../../img/placeholder-gray-dark.png";
-import placeholder from "../../../img/placeholder-gray.png";
-
 import Slider from "./Slider/Slider";
 import classes from "./PortfolioLayoutsTypeSixth.module.css";
+
 const title = "Projects References";
+const placeholderDark = "https://res.cloudinary.com/metalheadcoder/image/upload/v1623819782/FLINKEN%C2%AE%20Website/placeholder-gray-dark_r3bucl.png";
+const placeholder = "https://res.cloudinary.com/metalheadcoder/image/upload/v1623819781/FLINKEN%C2%AE%20Website/placeholder-gray_xkqdj6.png";
 
 class PortfolioLayoutsTypeSixth extends Component {
     state = {
