@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "swiper/swiper.min.css";
+import "swiper/css/swiper.min.css";
 import classes from "./Slider.module.css";
 import Swiper from "swiper";
 import Oval from "../../../../components/Frame/Frame";
