@@ -1,63 +1,35 @@
-import React from "react"
-import "./CustomInput.css"
-import { Form, InputGroup } from "react-bootstrap"
+import React from "react";
 
-const CustomInput = (props) => {
-  const type = props.type || "text"
-  const simple = props.simple + "" || "false"
-  return (
-    <Form.Group
-      className={`CustomInput ${props.classes} ${props.size} ${
-        props.dark ? `dark` : ""
-      }`}
-      controlId={props.controlId}
-    >
-      {props.label ? <Form.Label>{props.label}</Form.Label> : null}
-      {props.leftIcon ? (
-        <InputGroup className="leftIcon">
-          <InputGroup.Prepend>
-            <InputGroup.Text>{props.icon}</InputGroup.Text>
-          </InputGroup.Prepend>
-          <Form.Control
-            type={type}
-            placeholder={props.placeholder}
-            name={props.name}
-            required={true}
-          />
-        </InputGroup>
-      ) : null}
-      {props.rightIcon ? (
-        <InputGroup className="rightIcon">
-          <Form.Control
-            type={type}
-            placeholder={props.placeholder}
-            name={props.name}
-            required={true}
-          />
-          <InputGroup.Prepend>
-            <InputGroup.Text>{props.icon}</InputGroup.Text>
-          </InputGroup.Prepend>
-        </InputGroup>
-      ) : null}
-      {simple === "false" || props.textarea ? null : (
-        <Form.Control
-          type={type}
-          placeholder={props.placeholder}
-          name={props.name}
-          required={true}
-        />
-      )}
+import "./CustomInput.css";
+import { Form, InputGroup } from "react-bootstrap";
 
-      {props.textarea === true ? (
-        <Form.Control
-          as="textarea"
-          rows={props.rows}
-          name={props.name}
-          placeholder={props.placeholder}
-        />
-      ) : null}
-    </Form.Group>
-  )
-}
+const CustomInput = ({ classes, size, dark, controlId, label, leftIcon, icon, placeholder, name, rightIcon, textarea, type, simple, rows, selectType }) => {
+    const formType = type || "text";
+    const formSimple = simple + "" || "false";
+    return (
+        <Form.Group className={`CustomInput ${classes} ${size} ${dark ? `dark` : ""}`} controlId={controlId}>
+            {label ? <Form.Label>{label}</Form.Label> : null}
+            {leftIcon ? (
+                <InputGroup className="leftIcon">
+                    <InputGroup.Prepend>
+                        <InputGroup.Text>{icon}</InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <Form.Control type={type} placeholder={placeholder} name={name} required={true} />
+                </InputGroup>
+            ) : null}
+            {rightIcon ? (
+                <InputGroup className="rightIcon">
+                    <Form.Control type={type} placeholder={placeholder} name={name} required={true} />
+                    <InputGroup.Prepend>
+                        <InputGroup.Text>{icon}</InputGroup.Text>
+                    </InputGroup.Prepend>
+                </InputGroup>
+            ) : null}
+            {formSimple === "false" || textarea ? null : <Form.Control type={formType} placeholder={placeholder} name={name} required={true} />}
 
-export default CustomInput
+            {textarea === true ? <Form.Control as="textarea" rows={rows} name={name} placeholder={placeholder} /> : null}
+        </Form.Group>
+    );
+};
+
+export default CustomInput;
