@@ -2,6 +2,11 @@
     padding-top: 40px;
 }
 
+.centerContainer img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 1200px) {
     .features h1 {
         padding-right: 20px;
