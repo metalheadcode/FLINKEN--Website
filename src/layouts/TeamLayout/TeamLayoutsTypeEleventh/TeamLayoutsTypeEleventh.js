@@ -9,9 +9,6 @@ import Divider from "../../../components/Divider/Divider";
 import { Fade } from "react-awesome-reveal";
 
 const title = "Our Team";
-const placeholderDark = "https://res.cloudinary.com/metalheadcoder/image/upload/v1623819782/FLINKEN%C2%AE%20Website/placeholder-gray-dark_r3bucl.png";
-const placeholder = "https://res.cloudinary.com/metalheadcoder/image/upload/v1623819781/FLINKEN%C2%AE%20Website/placeholder-gray_xkqdj6.png";
-
 class TeamLayoutsTypeEleventh extends Component {
     state = {
         activePerson: 0,
@@ -103,7 +100,7 @@ class TeamLayoutsTypeEleventh extends Component {
                                                 <Socials dark={this.props.dark ? true : false}>
                                                     {this.state.person[this.state.activePerson].socials.map((item, index) => {
                                                         return (
-                                                            <a href={item.link} key={index}>
+                                                            <a target="_blank" href={item.link} key={index}>
                                                                 {item.icon}
                                                             </a>
                                                         );
