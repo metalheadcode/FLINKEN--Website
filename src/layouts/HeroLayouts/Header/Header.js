@@ -21,9 +21,8 @@ const Header = (props) => {
                 </div>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#services">Services</Nav.Link>
-                        <Nav.Link href="#contacts">Contacts</Nav.Link>
+                        <Nav.Link href="/about-us">About</Nav.Link>
+                        <Nav.Link href="/contacts">Contacts</Nav.Link>
                     </Nav>
                     <div className={classes.hiddenElements}>
                         <Form className="form">
