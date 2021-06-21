@@ -1,0 +1,32 @@
+.headerWrapper {
+    z-index: 10;
+    position: fixed;
+    margin: auto;
+    width: 90vw;
+    height: 70px;
+    border: 0.5px solid rgba(216, 216, 216, 0.55);
+    border-radius: 20px;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.468);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+}
+
+.customHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(87, 87, 87);
+    font-weight: 600;
+}
