@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
 import classes from "./Header.module.css";
 import { Nav, Navbar, Form, FormControl } from "react-bootstrap";
 import { AppLogo } from "../../../components/Icons/Icons";
 import Socials from "../Socials/Socials";
 import { Input } from "antd";
+import FlinkenContext from "../../../context/flinkenContext";
 const { Search } = Input;
 
 const Header = (props) => {
+    const flinkenContext = useContext(FlinkenContext);
+
+    useEffect(() => {
+        flinkenContext.changeTheme(true);
+    }, []);
+
+    const { dark } = flinkenContext;
     return (
-        <section className={`${classes.header} ${props.dark ? `dark ${classes.dark}` : ""}`}>
+        <section className={`${classes.header} ${dark ? `dark ${classes.dark}` : ""}`}>
             <Navbar collapseOnSelect expand="lg" className="p-0">
                 <div className={classes.wrapper}>
                     <Navbar.Brand href="/">
