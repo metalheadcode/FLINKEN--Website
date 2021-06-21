@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Col, Row } from "reactstrap";
 import { AppLogo } from "../../components/Icons/Icons";
 import classes from "./HeroLayoutsTypeFifth.module.css";
 import { Fade } from "react-awesome-reveal";
+import FlinkenContext from "../../context/flinkenContext";
 const titleText = "The New Standart In Malaysia Mortar Industry";
 const descriptionText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore inventore, ex iure id ad modi nobis iste sapiente laudantium at quod";
 
