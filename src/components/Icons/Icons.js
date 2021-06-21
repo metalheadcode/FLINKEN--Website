@@ -65,8 +65,9 @@ function MethodLogotype(props) {
 }
 
 function AppLogo(props) {
+    const size = props.size || { width: "60", height: "64" };
     return (
-        <svg width="60" height="64" viewBox="0 0 60 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={size.width} height={size.height} viewBox="0 0 60 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0)">
                 <path d="M59.8576 54.0786V63.9999H57.9577L53.0336 57.6876V63.9999H50.8278V54.0786H52.8913L57.6518 60.1856V54.0786H59.8576Z" fill="#0360AA" />
                 <path d="M49.5683 62.0609V63.9999H41.8264V54.0786H49.4971V56.0176H44.0465V58.0344H48.8425V59.9733H44.0465V62.0609H49.5683Z" fill="#0360AA" />
